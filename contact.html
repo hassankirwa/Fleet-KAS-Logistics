@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -8,7 +8,7 @@
 
     <link href="../css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Kas Logistics - Reservation</title>
+    <title>Kas Logistics - Contact Us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,9 +59,9 @@ https://templatemo.com/tm-580-woox-travel
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="reservation.html" class="active">Reservation</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>   
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -77,9 +77,9 @@ https://templatemo.com/tm-580-woox-travel
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h4>Book Our Services Here</h4>
-          <h2>Make Your Reservation</h2>
-          <p>Please fill out the form below to book our logistics services.</p>
+          <h4>Contact Us</h4>
+          <h2>Get In Touch</h2>
+          <p>We are here to help. Please fill out the form below to get in touch with us.</p>
         </div>
       </div>
     </div>
@@ -117,38 +117,37 @@ https://templatemo.com/tm-580-woox-travel
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="450px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form id="contact-form" name="gs" method="submit" role="search" action="#">
             <div class="row">
               <div class="col-lg-12">
-                <h4>Make Your <em>Reservation</em> Through This <em>Form</em></h4>
+                <h4>Send Us A <em>Message</em></h4>
               </div>
               <div class="col-lg-6">
                   <fieldset>
-                      <label for="Name" class="form-label">Your Name</label>
-                      <input type="text" name="Name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required="">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" name="name" class="Name" placeholder="Ex. John Smithee" autocomplete="on" required="">
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                    <label for="Number" class="form-label">Your Phone Number</label>
-                    <input type="text" name="Number" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required="">
+                    <label for="phone" class="form-label">Your Phone Number</label>
+                    <input type="text" name="phone" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required="">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                   <fieldset>
-                      <label for="chooseService" class="form-label">Choose Your Service</label>
-                      <select name="Service" class="form-select" aria-label="Default select example" id="chooseService" onchange="this.form.click()">
-                          <option selected="">ex. Warehousing</option>
-                          <option value="Warehousing">Warehousing</option>
-                          <option value="Freight Forwarding">Freight Forwarding</option>
-                          <option value="Customs Brokerage">Customs Brokerage</option>
-                          <option value="Supply Chain Management">Supply Chain Management</option>
-                      </select>
+                      <label for="message" class="form-label">Your Message</label>
+                      <textarea name="message" class="Message" placeholder="Your Message" required=""></textarea>
                   </fieldset>
               </div>
-              <div class="col-lg-12">                        
+              <div class="col-lg-12">
                   <fieldset>
-                      <button class="main-button">Make Your Reservation Now</button>
+                      <button class="main-button">Send Message</button>
                   </fieldset>
               </div>
             </div>
@@ -162,8 +161,7 @@ https://templatemo.com/tm-580-woox-travel
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2024 <a href="#">Kas Logistics</a> Company. All rights reserved.
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
+          <p>Copyright © 2024 <a href="https://kaslogistics.com/">Kas Logistics</a> Company. All rights reserved. </p>
         </div>
       </div>
     </div>
@@ -181,6 +179,13 @@ https://templatemo.com/tm-580-woox-travel
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
 
   </body>
 
